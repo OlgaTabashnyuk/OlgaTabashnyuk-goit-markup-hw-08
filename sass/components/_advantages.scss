@@ -1,0 +1,68 @@
+// .advantages {
+//     width: 1200px;
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//     margin: 0 auto;    
+    
+//         &-container {
+//         display: flex;
+//         width: 1200px;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//         margin-left: auto;
+//         margin-right: auto;
+//         align-items: center;
+//         justify-content: space-between;  
+//         }
+//     }
+//  .advantages-container .item {
+//     width: 270px; 
+    
+//     & + .item {
+//         width: 270px; 
+//         margin-left: 30px;
+//      }
+//     &::before {
+//         display: block;
+//         content: "";
+//         height: 120px;
+//         background: #F5F4FA;
+//         border-radius: 4px;
+//         background-repeat: no-repeat;
+//         margin-bottom: 30px;
+//         background-position: center;
+//      }   
+//      &:nth-child(1)::before {
+//         background-image: url(../images/advantages/antena.svg);
+//     }
+//      &:nth-child(2)::before {
+//         background-image: url(../images/advantages/clock.svg);
+//     }
+//      &:nth-child(3)::before {
+//         background-image: url(../images/advantages/vector.svg);
+//     }
+//     &:nth-child(4):before {
+//         background-image: url(../images/advantages/astronaut.svg);
+//     }
+// }
+// .advantages-title {
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+//     color: $title-text-color;
+// }
+// .advantages-description {
+//     font-family: $main-font;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+// }
+ 

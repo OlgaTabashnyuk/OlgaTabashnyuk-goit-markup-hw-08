@@ -1,0 +1,222 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+&.is-hidden {
+    opacity: 0;
+    pointer-events: none; 
+} 
+}
+.modal {
+    position: absolute;
+    display: block;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    padding: 40px 39px 40px 41px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+
+    .backdrop-is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-caption {
+        display: block;
+        margin-bottom: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: $title-text-color;
+    }
+}
+  .close-btn {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+        &-icon {
+            width: 18px;
+            height: 18px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover,
+            &:focus {
+                fill: $accent-color;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }    
+} 
+.form {
+    &-field {
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+     
+            &:last-child {
+                margin-bottom: 20px;
+            }
+    }
+    &-label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.167;
+        letter-spacing: 0.01em;
+        color: $primary-text-color;
+    }
+    &-input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding-left: 32px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+            &:focus {
+                border-color: $accent-color;
+                fill: $accent-color;
+                transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+    }     
+    &-comment {
+        display: block;
+        padding-top: 12px;
+        padding-left: 16px;
+        width: 100%;
+        height: 120px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.01em;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: rgba(117, 117, 117, 0.5);
+        resize: none;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        
+            &:not(:placeholder-shown) {
+                color: #000;
+            } 
+        &:focus {
+            border-color: $accent-color;
+            fill: $accent-color;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        } 
+    }
+    &-icon {
+        position: absolute;
+        bottom: 11px;
+        left: 12px; 
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+            &:focus {
+                border-color: $accent-color;
+                fill: $accent-color;
+                transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            } 
+    }
+}
+.form-input:focus + .form-icon   {
+    border-color: $accent-color;
+    fill: $accent-color;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ } 
+.send-btn {
+    width: 200px;
+    height: 50px;
+    color: $accent-color;
+    margin-left: 125px;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+    background-color: $accent-color;  
+    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+  }
+.policy {
+    &-label  {
+        display: block;
+        margin-left: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+    }
+    &-icon {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $title-text-color;
+        border-radius: 2px;
+        margin-right: 6px;
+    }
+    &-link {
+        text-decoration-skip-ink: none;
+        color: $accent-color;
+        text-decoration: underline;
+    }
+  }
+.checkbox {
+    appearance: none;
+    position: absolute;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+       
+    &:checked + .policy-icon {
+        background-color: $accent-color;
+        border: 2px solid $accent-color; 
+        background-image: url(../images/iconcheck2.svg);
+        background-size: contain;
+        background-origin: border-box;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+}

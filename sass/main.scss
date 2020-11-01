@@ -1,0 +1,25 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+@import "./base/common";
+@import "./base/container";
+@import "./utils/breakpoint";
+
+// COMPONENTS
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/social-links";
+
+
+//  LAYOUTS
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/hero-button";
+@import "./components/advantages";
+@import "./layout/we-do";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+

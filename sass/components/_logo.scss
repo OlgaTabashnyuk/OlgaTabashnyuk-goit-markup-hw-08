@@ -1,0 +1,28 @@
+.header-logo {
+   display: block; 
+  
+}
+
+.logo {
+    display: block; 
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration: none;
+    
+        &-color {
+        color: #000000;
+        }
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+}
+// @media screen and (max-width: 767px) {
+//     .header-logo {
+       
+//     }
+// }
