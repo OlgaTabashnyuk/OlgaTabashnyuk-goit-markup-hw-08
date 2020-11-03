@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="vieat="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
     <link rel="stylesheet" href="./css/modern-normalize.css">
@@ -16,61 +16,67 @@
      <!--Header-->
 <header class="header">
     <div class="container">
-        <nav class="nav">
+        <nav class="nav-container">
             <a class="logo" href="./index.html" aria-label="логотип вебстудии">Web<span class="logo-color">Studio</span></a> 
-            <button type="button" class="menu-button" is-open data-menu-button>
+
+            <button type="button" 
+            class="menu-button" is-open 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-button>
                 <svg 
-                width="40" 
-                height="40"
+                width="24" 
+                height="16"
                 aria-label="Переключатель мобильного меню">
                     <use class="icon-close" href="./images/nav/nav.svg#close"></use>
                     <use class="icon-menu" href="./images/nav/nav.svg#menu"></use>
                 </svg>
             </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
+                  <ul class="navigation-list">
+                   <li class="item">
+                       <a class="navigation-list-link-active" href="./index.html">Студия</a>
+                   </li>
+       
+                   <li class="item">
+                       <a class="navigation-list-link" href="./portfolio.html">Портфолио</a>
+                   </li>
+       
+                   <li class="item">
+                       <a class="navigation-list-link" href="Контакты">Контакты</a>
+                   </li>
+               </ul>
+           <address>
+               <ul class="address">
+                   <li class="item">
+                      
+                     <a class="address-link-mail" href="mailto:info@devstudio.com"> 
+                           <svg class="icon-envel" width="16px" height="12px">
+                                <use href="./images/sprite3.svg#envelope"></use>
+                           </svg>info@devstudio.com</a>  
+                   </li>
+       
+                   <li class="item">
+                       <a class="address-link-tel" href="tel:380961111111">
+                           <svg class="icon-tel" width="10px" height="20px">
+                               <use href="./images/sprite3.svg#telephone"></use>
+                           </svg>+38 096 111 11 11                
+                       </a>  
+                   </li>
+               </ul>     
+       
+           </address>
+       
+        </div>
+
         </nav>
     </div>
      
     
       </div> 
       
-    <div class="header-container">
-         <nav class="nav-container"> 
-        <ul class="navigation-list">
-            <li class="item">
-                <a class="navigation-list-link-active" href="./index.html">Студия</a>
-            </li>
-
-            <li class="item">
-                <a class="navigation-list-link" href="./portfolio.html">Портфолио</a>
-            </li>
-
-            <li class="item">
-                <a class="navigation-list-link" href="Контакты">Контакты</a>
-            </li>
-        </ul>
-    <address>
-        <ul class="address">
-            <li class="item">
-               
-              <a class="address-link-mail" href="mailto:info@devstudio.com"> 
-                    <svg class="icon-envel" width="16px" height="12px">
-                         <use href="./images/sprite3.svg#envelope"></use>
-                    </svg>info@devstudio.com</a>  
-            </li>
-
-            <li class="item">
-                <a class="address-link-tel" href="tel:380961111111">
-                    <svg class="icon-tel" width="10px" height="20px">
-                        <use href="./images/sprite3.svg#telephone"></use>
-                    </svg>+38 096 111 11 11                
-                </a>  
-            </li>
-        </ul>     
-
-    </address>
-
-    </nav>
-    </div>
+   
    
 </header>
 
@@ -150,11 +156,12 @@
 
 
     <!-- Advantages-->
-    <!-- <section class="advantages">
+    <section class="advantages">
     
         <h2 hidden>Advantages</h2>
-             
-    <ul class="advantages-container">
+   <div class="advantages-container">
+         
+    <ul class="advantages-list">
         <li class="item">
           <h3 class="advantages-title">Внимание к деталям</h3>
           <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -175,7 +182,8 @@
             <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
-    </section> -->
+</div>
+    </section>
 
     <!--What-we-do-->
     <!-- <section class="do-list">
