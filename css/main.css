@@ -674,8 +674,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 27px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   outline: 1px solid blue;
 }
 
@@ -737,7 +736,7 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .advantages-container {
     width: 480px;
   }
   .advantages-list .item::before,
@@ -754,13 +753,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .advantages-container {
     width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
   }
   .advantages-list .item::before,
@@ -775,7 +776,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .advantages-list {
+  .advantages-container {
     width: 1200px;
   }
   .advantages-list .item::before,
