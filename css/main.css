@@ -694,6 +694,28 @@ img {
   background-size: cover;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .overlay {
     background-image: url("..//../images/hero/hero-mobile@2x.jpg");
@@ -724,28 +746,6 @@ img {
   }
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
@@ -771,72 +771,81 @@ img {
 }
 
 .advantages-container {
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  margin: 0 auto;
   outline: 1px solid red;
 }
 
-@media screen and (min-width: 480px) {
+.advantages-list .item {
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+.advantages-list .item::before {
+  display: block;
+  content: "";
+  width: 450px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-position: center;
+}
+
+.advantages-list .item:nth-child(1)::before {
+  background-image: url(../images/advantages/antena.svg);
+}
+
+.advantages-list .item:nth-child(2)::before {
+  background-image: url(../images/advantages/clock.svg);
+}
+
+.advantages-list .item:nth-child(3)::before {
+  background-image: url(../images/advantages/vector.svg);
+}
+
+.advantages-list .item:nth-child(4):before {
+  background-image: url(../images/advantages/astronaut.svg);
+}
+
+.advantages-title {
+  display: block;
+  width: 450px;
+  text-align: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #212121;
+}
+
+.advantages-description {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  width: 450px;
+}
+
+.advantages-list .item:nth-child(n+3) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages-container {
-    padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-    margin: 0 auto;
     width: 480px;
-  }
-  .advantages-list .item {
-    width: 450px;
-    margin-bottom: 30px;
-  }
-  .advantages-list .item::before {
-    display: block;
-    content: "";
-    width: 450px;
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-    background-position: center;
-  }
-  .advantages-list .item:nth-child(1)::before {
-    background-image: url(../images/advantages/antena.svg);
-  }
-  .advantages-list .item:nth-child(2)::before {
-    background-image: url(../images/advantages/clock.svg);
-  }
-  .advantages-list .item:nth-child(3)::before {
-    background-image: url(../images/advantages/vector.svg);
-  }
-  .advantages-list .item:nth-child(4):before {
-    background-image: url(../images/advantages/astronaut.svg);
-  }
-  .advantages-list .item:nth-child(n+3) {
-    margin-bottom: 0px;
-  }
-  .advantages-title {
-    display: block;
-    width: 450px;
-    text-align: center;
-    align-items: center;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #212121;
-  }
-  .advantages-description {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-    width: 450px;
   }
 }
 
@@ -1348,14 +1357,14 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #FFFFFF;
 }
 
 .footer-address-contact-link:hover, .footer-address-contact-link:focus {
   color: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     width: 480px;
     height: 603px;
@@ -1368,7 +1377,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     width: 768px;
     height: 463px;
@@ -1389,11 +1398,66 @@ img {
     fill: #FFFFFF;
     cursor: pointer;
   }
+  .subscribe {
+    padding-top: 60px;
+  }
   .subscribe-form {
     align-items: center;
   }
   .subscribe-form_input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    width: 1200px;
+    height: 252px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-container-address {
+    display: block;
+    text-align: start;
+    padding-right: 70px;
+  }
+  .footer-container-socials {
+    padding-top: 10px;
+  }
+  .footer .footer-wrapper {
+    display: flex;
+  }
+  .footer-address-list {
+    text-align: start;
+  }
+  .subscribe {
+    display: block;
+    align-items: center;
+    width: 570px;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .subscribe-form_input {
+    width: 358px;
+    margin-left: 12px;
+  }
+  .subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20;
+    margin-left: 12px;
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .subscribe-title {
+    text-align: start;
   }
 }
 /*# sourceMappingURL=main.css.map */

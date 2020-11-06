@@ -16,6 +16,30 @@
       background-size: cover;
 }
 
+.hero {
+  &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  &-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.615;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+}
+
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
@@ -52,27 +76,7 @@
   }
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-.hero-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+
 @media screen and (min-width: 1200px) {
     .hero {
         &-title {
@@ -83,21 +87,3 @@
     }
 }
 
-
-// .hero-title {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 696px;
-//     height: 120px;
-//     // margin: 200px 452px 30px 452px;
-//     font-family: $main-font;
-//     font-style: normal;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 60px;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: #FFFFFF;
-// }
