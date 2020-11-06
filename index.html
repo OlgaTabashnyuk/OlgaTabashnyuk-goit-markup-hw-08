@@ -51,8 +51,8 @@
                         </li>
                       </ul>
                 
-                    <div class="contacts">
-                       <address>
+                    
+                       <address class="menu-contacts">
                          <ul class="address">
                              <li class="item">
                                   <a class="address-link-mail" href="mailto:info@devstudio.com"> 
@@ -71,7 +71,7 @@
                          </ul>     
                  
                        </address>
-                     </div>
+                    
                 </div>
                
         </div>
@@ -192,7 +192,7 @@
     </section>
 
     <!--What-we-do-->
-    <!-- <section class="do-list">
+    <section class="do-list">
         <h2 class="what-we-do-list">Чем мы занимаемся</h2>
         <ul class="what-we-do-container">
             <li class="item">
@@ -218,16 +218,25 @@
                 </div>
             </li>
         </ul>
-    </section> -->
+    </section>
 
         <!-- Our team-->
 
-<!-- <section class="team">
+<section class="team">
      <div class="team-container">
         <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                  <li class="team-element">
-                    <img class="team-photo" src="./images/team/id.jpg" alt="Фото Игорь Демьяненко" width="270" height="260"> 
+                    <picture> 
+                        <source srcset="./images/team/id-desktop.webp 1x, ./images/team/id-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" > 
+                        <source srcset="./images/team/id-desktop.jpg 1x, ./images/team/id-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/id-tablet.webp 1x, ./images/team/id-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" >
+                        <source srcset="./images/team/id-tablet.jpg 1x, ./images/team/id-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/id-mobile.webp 1x, ./images/team/id-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp" >
+                        <source srcset="./images/team/id-mobile.jpg 1x, ./images/team/id-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                        <img class="team-photo" src="./images/team/id.jpg" alt="Фото Игорь Демьяненко">
+                    </picture>
+                     
                          <div class="content">
                             <h3 class="team-member">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
@@ -269,7 +278,16 @@
 
             
                 <li class="team-element">
-                    <img class="team-photo" src="./images/team/or.jpg" alt="Фото Ольга Репина" width="270" height="260">
+                    <picture>
+                            <source srcset="./images/team/or-desktop.webp 1x, ./images/team/or-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" > 
+                            <source srcset="./images/team/or-desktop.jpg 1x, ./images/team/or-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/team/or-tablet.webp 1x, ./images/team/or-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" >
+                            <source srcset="./images/team/or-tablet.jpg 1x, ./images/team/or-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team/or-mobile.webp 1x, ./images/team/or-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp" >
+                            <source srcset="./images/team/or-mobile.jpg 1x, ./images/team/or-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team-photo" src="./images/team/or.jpg" alt="Фото Ольга Репина">
+                    </picture>
+                    
                         <div class="content">
                             <h3 class="team-member">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
@@ -310,7 +328,17 @@
                 </li>
 
                 <li class="team-element">
-                    <img class="team-photo" src="./images/team/ntar.jpg" alt="Фото Николай Тарасов" width="270" height="260">
+                <picture>
+                        <source srcset="./images/team/nt-desktop.webp 1x, ./images/team/nt-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" > 
+                        <source srcset="./images/team/nt-desktop.jpg 1x, ./images/team/nt-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/nt-tablet.webp 1x, ./images/team/nt-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" >
+                        <source srcset="./images/team/nt-tablet.jpg 1x, ./images/team/nt-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/nt-mobile.webp 1x, ./images/team/nt-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp" >
+                        <source srcset="./images/team/nt-mobile.jpg 1x, ./images/team/nt-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team-photo" src="./images/team/ntar.jpg" alt="Фото Николай Тарасов"> 
+                </picture>
+
+                    
                         <div class="content">
                             <h3 class="team-member">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -351,7 +379,18 @@
                 </li >
 
                 <li class="team-element">
-                    <img class="team-photo" src="./images/team/my.jpg" alt="Фото Михаил Ермаков" width="270" height="260">
+        <picture> 
+                <source srcset="./images/team/mr-desktop.webp 1x, ./images/team/mr-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" > 
+                <source srcset="./images/team/mr-desktop.jpg 1x, ./images/team/mr-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/team/mr-tablet.webp 1x, ./images/team/mr-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp" >
+                <source srcset="./images/team/mr-tablet.jpg 1x, ./images/team/mr-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/team/mr-mobile.webp 1x, ./images/team/mr-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp" >
+                <source srcset="./images/team/mr-mobile.jpg 1x, ./images/team/mr-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img class="team-photo" src="./images/team/my.jpg" alt="Фото Михаил Ермаков">
+            
+        </picture>
+
+                   
                         <div class="content">
                             <h3 class="team-member">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
@@ -393,9 +432,9 @@
 
             </ul>
     </div>
-</section> -->
+</section>
         <!--CLIENTS-->
-<!-- <section class="clients">
+<section class="clients">
     <div class="clients-container">
         <h2 class="clients-title">Постоянные клиенты</h2>
              <ul class="clients-list">
@@ -459,26 +498,26 @@
 </section>
 
 
-    </main> -->
+    </main>
 
     <!------------- FOOTER ------------->
-<!--    
+   
 <footer class="footer">
     <div class="footer-container">
             <div class="footer-container-address">
             <a class="footer-logo" href="./index.html" aria-label="логотип вебстудии" > <span class="footer-logo-blue">Web</span> <span class="footer-logo-color">Studio</span></a>
 
         <address class="footer-address">
-            <ul class="footer-address-item">
-                <li>
-                    <a class="footer-address-item-link" href="https://goo.gl/maps/kA2Q2odCRpg2NFDA9" target="_blank"> г. Киев, пр-т Леси Украинки, 26</a> 
+            <ul class="footer-address-list">
+                <li class="item">
+                    <a class="footer-address-list-link" href="https://goo.gl/maps/kA2Q2odCRpg2NFDA9" target="_blank"> г. Киев, пр-т Леси Украинки, 26</a> 
                 </li> 
     
-                <li>
+                <li class="item">
                   <a class="footer-address-contact-link" href="mailto:info@example.com">info@example.com</a>  
                 </li>
     
-                <li>
+                <li class="item">
                     <a class="footer-address-contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
@@ -520,11 +559,11 @@
                     </a>
                 </li>
             </ul>
-        </div> -->
+        </div> 
 
 <!-- ПОДПИШИТЕСЬ НА РАССЫЛКУ-->
 
-<!-- <div class="subscribe">
+ <div class="subscribe">
     <p class="subscribe-title">Подпишитесь на рассылку</p>
     
         <form action="" class="subscribe-form">
@@ -540,7 +579,7 @@
 </div>
 
     </div> 
-</footer> -->
+</footer> 
 
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
