@@ -1,56 +1,79 @@
-// .navigation {
-//     max-width: 1600px;
-//     margin: 0 auto;
-//     padding-left: 200px;
-//     padding-right: 200px;
-//     }
+.navigation {
+    max-width: 1600px;
+    margin: 0 auto;
+    // padding-left: 200px;
+    // padding-right: 200px;
+    }
 
-//  .container-nav {
-//      display: flex;
-//      width: 100%;
-//      padding-right: 15px;
-//      padding-left: 15px;
-//      padding-top: 94px;
-//      padding-bottom: 50px;
-//      justify-content: center;
-//      align-items: center;
-//  }
+ .container-nav {
+     display: flex;
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+    //  justify-content: center;
+    //  align-items: center;
+ }
 
-// .portfolio {
-//     &-container {
-//     display: flex;
-//     width: 1200px;
-//     justify-content: center;
-//         & .item + .item { 
-//             margin-left: 8px;
-//         }
-//     }
-//     &-btn {
-//         display: inline-block;
-//         padding: 6px 22px;
-//         border-radius: 4px;
-//         font-family: $main-font;
-//         font-style: normal;
-//         font-weight: 500;
-//         font-size: 16px;
-//         line-height: 1.88;
-//         letter-spacing: 0.03em;
-//         text-align: center;
-//         color: $title-text-color;
-//         background-color:  #F5F4FA;
-//         border: none;   
+.portfolio {
+    &-container {
+    display: flex;
+    // width: 1200px;
+    justify-content: center;
+        & .item + .item { 
+            margin-left: 8px;
+        }
+    }
+    &-btn {
+        display: inline-block;
+        padding: 6px 22px;
+        border-radius: 4px;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $title-text-color;
+        background-color:  #F5F4FA;
+        border: none;   
 
-//             &:hover {
-//                 background-color: $accent-color;
-//                 color: white;
-//                 cursor: pointer;
-//             } 
-//             &:focus {
-//                 background-color: $accent-color;
-//                 color: white;
-//                 cursor: pointer;
-//             }   
-//     }    
-// }
+            &:hover {
+                background-color: $accent-color;
+                color: white;
+                cursor: pointer;
+            } 
+            &:focus {
+                background-color: $accent-color;
+                color: white;
+                cursor: pointer;
+            }   
+    }    
+}
 
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container-nav{
+        width: 480px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    .container-nav{
+        width: 768px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1200px)  {
+    .container-nav{
+        width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+}
