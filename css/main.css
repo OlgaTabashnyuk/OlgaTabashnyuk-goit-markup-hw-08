@@ -35,6 +35,7 @@ a {
 }
 
 img {
+  max-width: 100%;
   display: block;
 }
 
@@ -788,7 +789,6 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .hero-title {
-    font-size: 44px;
     line-height: 60px;
     text-align: center;
   }
@@ -875,7 +875,6 @@ body.modal-open {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 450px;
 }
 
 .advantages-list .item:nth-child(n+3) {
@@ -1028,11 +1027,6 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .team-element {
@@ -1404,7 +1398,7 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
-    width: 480px;
+    max-width: 480px;
     height: 603px;
   }
   .footer-address-list {

@@ -35,6 +35,7 @@ a {
 }
 
 img {
+  max-width: 100%;
   display: block;
 }
 
@@ -1199,7 +1200,7 @@ body.modal-open {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
-    width: 480px;
+    max-width: 480px;
     height: 603px;
   }
   .footer-address-list {
