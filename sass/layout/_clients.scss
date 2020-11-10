@@ -23,6 +23,7 @@
                
                 & .item {
                     fill: $link-color;  
+                   
                  }
             }
             & .link {
@@ -60,9 +61,12 @@
     }
       &-list {
         & .link {
-            width: 210px;
+            max-width: 210px;
             height: 90px;
             margin-top: 30px;
+        }
+        & .item {
+            width: calc(53.3% - 30px);
         }
         & .item:nth-child(odd) {
             margin-right: 30px;

@@ -1163,9 +1163,12 @@ body.modal-open {
     max-width: 480px;
   }
   .clients-list .link {
-    width: 210px;
+    max-width: 210px;
     height: 90px;
     margin-top: 30px;
+  }
+  .clients-list .item {
+    width: calc(53.3% - 30px);
   }
   .clients-list .item:nth-child(odd) {
     margin-right: 30px;
