@@ -668,6 +668,7 @@ body.modal-open {
   }
   .address-link-mail, .address-link-tel {
     font-size: 12px;
+    align-items: center;
   }
 }
 
@@ -1027,6 +1028,11 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .team-element {

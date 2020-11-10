@@ -668,6 +668,7 @@ body.modal-open {
   }
   .address-link-mail, .address-link-tel {
     font-size: 12px;
+    align-items: center;
   }
 }
 
