@@ -31,3 +31,9 @@ img {
     font-family: $main-font;
     font-style: normal;
 }
+.button-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+ }

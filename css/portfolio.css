@@ -46,6 +46,13 @@ img {
   font-style: normal;
 }
 
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -316,12 +323,6 @@ body.modal-open {
   .modal {
     overflow-y: scroll;
     width: 100%;
-  }
-  .button-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .policy-label {
     margin-left: 0px;
