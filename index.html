@@ -88,63 +88,7 @@
             <button type="button" class="hero-button" data-modal-open>
                 Заказать услугу
             </button>
-<!--------MODAL ------->
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                <button  class="close-btn" type="button" data-modal-close>
-                    <svg class="close-btn-icon" width="18px" height="18px">
-                        <use href="./images/sprite3.svg#close"></use>
-                    </svg></button>
-                
-                
-                <form action="" class="form">
-                    <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
-            
-                    <label class="form-field">
-                        <span class="form-label">Имя</span>
-                        <input type="text" class="form-input" name="name"  >
-                        <svg class="form-icon" width="18px" height="18px">
-                        <use href="./images/sprite3.svg#person"></use>
-                    </svg>
-                    </label>    
-                    
-                    <label class="form-field">
-                        <span class="form-label">Телефон</span>
-                        <input type="tel" class="form-input" name="tel">
-                        <svg class="form-icon" width="18px" height="18px">
-                            <use href="./images/sprite3.svg#tel"></use>
-                        </svg>
-                    </label>
 
-                    <label class="form-field">
-                        <span class="form-label">Почта</span>
-                        <input type="mail" class="form-input" name="mail">
-                        <svg class="form-icon" width="18px" height="18px">
-                            <use href="./images/sprite3.svg#email"></use>
-                        </svg>
-                    </label>
-
-                    <label class="form-field">
-                        <span class="form-label">Комментарий</span>
-                        <textarea name="comment" class="form-comment"  cols="30" rows="10" placeholder="Введите текст"></textarea>
-                    </label>
-
-                    <label class="policy-label" >
-                        <input class="checkbox" type="checkbox" name="user-policy" value="accept-policy"  class="checkbox-policy visually-hidden" required>
-                            <span class="policy-icon">
-
-                            </span>Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></input>
-                    </label>
-
-                    <button type="submit" class="send-btn">Отправить
-                       </button>
-
-                </form>
-                          
-
-
-                    </div>
-                </div>
         </div>
     </section>
 </div>
@@ -573,6 +517,64 @@
 
     </div> 
 </footer> 
+
+<!--------MODAL ------->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+<button  class="close-btn" type="button" data-modal-close>
+    <svg class="close-btn-icon" width="18px" height="18px">
+        <use href="./images/sprite3.svg#close"></use>
+    </svg></button>
+
+
+<form action="" class="form">
+    <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
+
+    <label class="form-field">
+        <span class="form-label">Имя</span>
+        <input type="text" class="form-input" name="name"  >
+        <svg class="form-icon" width="18px" height="18px">
+        <use href="./images/sprite3.svg#person"></use>
+    </svg>
+    </label>    
+    
+    <label class="form-field">
+        <span class="form-label">Телефон</span>
+        <input type="tel" class="form-input" name="tel">
+        <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/sprite3.svg#tel"></use>
+        </svg>
+    </label>
+
+    <label class="form-field">
+        <span class="form-label">Почта</span>
+        <input type="mail" class="form-input" name="mail">
+        <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/sprite3.svg#email"></use>
+        </svg>
+    </label>
+
+    <label class="form-field">
+        <span class="form-label">Комментарий</span>
+        <textarea name="comment" class="form-comment"  cols="30" rows="10" placeholder="Введите текст"></textarea>
+    </label>
+
+    <label class="policy-label" >
+        <input class="checkbox" type="checkbox" name="user-policy" value="accept-policy"  class="checkbox-policy visually-hidden" required>
+            <span class="policy-icon">
+
+            </span>Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></input>
+    </label>
+
+    <button type="submit" class="send-btn">Отправить
+       </button>
+
+</form>
+          
+
+
+    </div>
+</div>
 
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
