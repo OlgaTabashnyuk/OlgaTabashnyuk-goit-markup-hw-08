@@ -884,7 +884,7 @@ body.modal-open {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
