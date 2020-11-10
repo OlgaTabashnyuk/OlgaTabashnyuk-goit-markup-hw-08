@@ -251,7 +251,6 @@ body.modal-open {
   width: 200px;
   height: 50px;
   color: #2196F3;
-  margin-left: 60px;
   margin-top: 30px;
   border-radius: 4px;
   font-family: Roboto, sans-serif;
@@ -330,6 +329,9 @@ body.modal-open {
   .modal {
     position: absolute;
     width: 480px;
+  }
+  .send-btn {
+    margin-left: 85px;
   }
 }
 
