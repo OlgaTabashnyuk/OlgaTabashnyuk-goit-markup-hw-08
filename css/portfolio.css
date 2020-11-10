@@ -437,7 +437,7 @@ body.modal-open {
 .navigation-list-link {
   display: block;
   font-family: Roboto, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   color: #212121;
   line-height: 1.167;
@@ -914,9 +914,9 @@ body.modal-open {
   color: #757575;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
   .project-list {
     padding-bottom: 60px;

@@ -4,19 +4,19 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 60px;
-        margin: auto;
+        margin: 0 auto;
        
         
      }
      &-list {
         & .item {
-            width: 450px;
+            max-height: 450px;
             margin-bottom: 30px; 
               
                         &::before {
                     display: block;
                     content: "";
-                    width: 450px;
+                    max-width: 450px;
                     height: 120px;
                     background: #F5F4FA;
                     border-radius: 4px;
@@ -41,7 +41,7 @@
     }
     &-title {
     display: block;
-    width: 450px;
+    max-width: 450px;
     text-align: center; 
     align-items: center; 
     font-family: $main-font;
