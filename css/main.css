@@ -251,7 +251,6 @@ body.modal-open {
   width: 200px;
   height: 50px;
   color: #2196F3;
-  margin-top: 30px;
   border-radius: 4px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -318,6 +317,12 @@ body.modal-open {
     overflow-y: scroll;
     width: 100%;
   }
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .policy-label {
     margin-left: 0px;
     font-size: 12px;
@@ -328,9 +333,6 @@ body.modal-open {
   .modal {
     position: absolute;
     width: 480px;
-  }
-  .send-btn {
-    margin-left: 85px;
   }
 }
 
@@ -347,9 +349,6 @@ body.modal-open {
   .policy-label {
     margin-left: 14px;
     font-size: 14px;
-  }
-  .send-btn {
-    margin-left: 125px;
   }
 }
 
@@ -1086,7 +1085,6 @@ body.modal-open {
   .team-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
   .team-element + .team-element {
     margin-left: 30px;
