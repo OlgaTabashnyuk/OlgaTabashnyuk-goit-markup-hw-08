@@ -56,7 +56,7 @@
 @media screen  and (min-width: 320px) and (max-width: 767px) {
   .clients {
      &-container {
-        width: 480px;     
+        max-width: 480px;     
     }
       &-list {
         & .link {
