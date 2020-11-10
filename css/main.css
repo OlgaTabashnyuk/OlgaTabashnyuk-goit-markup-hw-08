@@ -316,6 +316,7 @@ body.modal-open {
 @media screen and (min-width: 100px) and (max-width: 1199px) {
   .modal {
     overflow-y: scroll;
+    width: 100%;
   }
   .policy-label {
     margin-left: 0px;
