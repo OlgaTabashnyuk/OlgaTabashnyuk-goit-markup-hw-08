@@ -234,14 +234,10 @@
 }
 
 
-@media screen and (min-width: 100px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 1199px) {
     .modal {
         overflow-y: scroll;
-    
-            &-caption {
-              
-                height: 60px;
-            }
+                
   }
   .policy {
     &-label  {
