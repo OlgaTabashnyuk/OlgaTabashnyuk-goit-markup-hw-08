@@ -140,7 +140,7 @@
         flex-wrap: wrap;
         padding-bottom: 60px;
         & .item {
-        width: 354px;  
+        width: calc(50% - 30px);  
         &:nth-child(odd) {
             margin-right: 30px;
             margin-bottom: 30px;   

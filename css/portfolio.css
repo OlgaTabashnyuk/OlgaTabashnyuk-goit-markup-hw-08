@@ -435,7 +435,7 @@ body.modal-open {
 .navigation-list-link-active {
   display: block;
   font-family: Roboto, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   color: #2196F3;
   line-height: 1.167;
@@ -932,7 +932,7 @@ body.modal-open {
     padding-bottom: 60px;
   }
   .project-list .item {
-    width: 354px;
+    width: calc(50% - 30px);
   }
   .project-list .item:nth-child(odd) {
     margin-right: 30px;
