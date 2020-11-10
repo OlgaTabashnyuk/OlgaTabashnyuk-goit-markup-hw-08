@@ -875,7 +875,6 @@ body.modal-open {
 
 .project-list .item {
   position: relative;
-  height: 404px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
