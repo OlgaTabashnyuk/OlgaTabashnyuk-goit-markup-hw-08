@@ -513,7 +513,7 @@ body.modal-open {
 .header .nav-container {
   display: flex;
   height: 80px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -615,15 +615,16 @@ body.modal-open {
   .header {
     display: flex;
     align-items: center;
+    max-width: 768px;
   }
   .header .nav-container {
     align-items: center;
     justify-content: space-between;
-    max-width: 768px;
   }
   .menu-container {
     display: flex;
     z-index: 999;
+    justify-content: space-between;
   }
   .menu-button {
     display: none;
@@ -637,7 +638,8 @@ body.modal-open {
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
-    margin-right: 84px;
+    padding-left: 40px;
+    margin-right: 40px;
   }
   .navigation-list-link {
     font-size: 14px;

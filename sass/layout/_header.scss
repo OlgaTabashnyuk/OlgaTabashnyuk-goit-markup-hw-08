@@ -1,6 +1,7 @@
 .header {
     position: relative;
     border-bottom: 1px solid #ECECEC;
+    
 }
 .menu-button {
     display: none;
@@ -111,10 +112,11 @@
 .header .nav-container {
     display: flex; 
     height: 80px;
-    margin: auto;
+    margin: 0 auto;
     
 }
 @media screen and (max-width: 767px) {
+    
     .menu-container {
         display: none;
         position: absolute;
@@ -217,21 +219,23 @@
     .header {
         display: flex;
         align-items: center;
+        max-width: 768px;
       
         & .nav-container {
             align-items: center;
             justify-content: space-between;
-             max-width: 768px;
+             
         }
     }
     .menu {
         &-container {
             display: flex;
             z-index: 999;
-            
+            justify-content: space-between;
            
-            // justify-content: flex-start;
-            // padding-left: 84px;         
+    
+            // padding-left: 44px; 
+            // margin-right: 40px;       
         }
         &-button {
             display: none;
@@ -247,7 +251,8 @@
         flex-direction: row;
         align-items: center; 
         margin-bottom: 0;
-        margin-right: 84px;
+        padding-left: 40px;
+        margin-right: 40px;
             &-link {
                 font-size: 14px;  
             }
