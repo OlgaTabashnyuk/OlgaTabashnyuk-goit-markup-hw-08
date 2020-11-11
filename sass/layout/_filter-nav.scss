@@ -55,9 +55,9 @@
     }    
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .container-nav {
-        width: 480px;
+        max-width: 480px;
         padding-top: 60px;
         padding-bottom: 40px;
         justify-content: flex-start;  

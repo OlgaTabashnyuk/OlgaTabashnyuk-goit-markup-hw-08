@@ -618,13 +618,12 @@ body.modal-open {
   }
   .header .nav-container {
     align-items: center;
+    justify-content: space-between;
     max-width: 768px;
   }
   .menu-container {
     display: flex;
     z-index: 999;
-    justify-content: flex-start;
-    padding-left: 84px;
   }
   .menu-button {
     display: none;

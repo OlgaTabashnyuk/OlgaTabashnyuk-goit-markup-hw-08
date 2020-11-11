@@ -220,7 +220,7 @@
       
         & .nav-container {
             align-items: center;
-            
+            justify-content: space-between;
              max-width: 768px;
         }
     }
@@ -230,8 +230,8 @@
             z-index: 999;
             
            
-            justify-content: flex-start;
-            padding-left: 84px;         
+            // justify-content: flex-start;
+            // padding-left: 84px;         
         }
         &-button {
             display: none;
