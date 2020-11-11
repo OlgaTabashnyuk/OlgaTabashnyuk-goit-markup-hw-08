@@ -83,7 +83,7 @@
             margin-right: 8px; 
         }
         & .item + .item {
-            // margin-top: 16px;
+            
             text-decoration: none;
             list-style-type: none;
         }
@@ -93,7 +93,7 @@
     display: flex;
     font-family: $main-font;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: $primary-text-color;

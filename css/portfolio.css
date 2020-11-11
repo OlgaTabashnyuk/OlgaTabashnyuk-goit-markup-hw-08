@@ -492,7 +492,7 @@ body.modal-open {
   display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: #757575;
@@ -786,8 +786,8 @@ body.modal-open {
   .portfolio-container .item:last-child {
     margin-bottom: 0;
   }
-  .portfolio-container .item:nth-child(3) {
-    margin-right: 0px;
+  .portfolio-container .item:nth-child(4) {
+    margin-left: 0px;
   }
 }
 
