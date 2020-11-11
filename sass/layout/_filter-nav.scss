@@ -22,8 +22,8 @@
     display: flex;
   
     justify-content: center;
-        & .item + .item { 
-            margin-left: 8px;
+        & .item { 
+            margin-right: 8px;
         }
     }
     &-btn {
@@ -68,15 +68,13 @@
             justify-content: flex-start;
             
                 & .item:not(:last-child) {
-                    // margin-right: 8px;
+                   
                     margin-bottom: 15px;
                   }  
-                  & .item:last-child {
-                    margin-bottom: 0;
-                  } 
-                  & .item:nth-child(4) {
-                    margin-left: 0px; 
-                  }  
+                //   & .item:last-child {
+                //     margin-bottom: 0;
+                //   } 
+                
                 }
         }
     }

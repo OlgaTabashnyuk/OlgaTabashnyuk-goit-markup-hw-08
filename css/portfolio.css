@@ -736,8 +736,8 @@ body.modal-open {
   justify-content: center;
 }
 
-.portfolio-container .item + .item {
-  margin-left: 8px;
+.portfolio-container .item {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -781,12 +781,6 @@ body.modal-open {
   }
   .portfolio-container .item:not(:last-child) {
     margin-bottom: 15px;
-  }
-  .portfolio-container .item:last-child {
-    margin-bottom: 0;
-  }
-  .portfolio-container .item:nth-child(4) {
-    margin-left: 0px;
   }
 }
 
