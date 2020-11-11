@@ -217,13 +217,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .header {
+        & .container {
         display: flex;
         align-items: center;
         max-width: 768px;
-      
+        }
         & .nav-container {
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
              
         }
     }
